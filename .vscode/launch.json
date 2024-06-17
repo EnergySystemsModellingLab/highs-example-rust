@@ -7,11 +7,11 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'muse2'",
+            "name": "Debug executable 'highs_example_rust'",
             "cargo": {
-                "args": ["build", "--bin=muse2", "--package=muse2"],
+                "args": ["build", "--bin=highs_example_rust", "--package=highs_example_rust"],
                 "filter": {
-                    "name": "muse2",
+                    "name": "highs_example_rust",
                     "kind": "bin"
                 }
             },
@@ -21,11 +21,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'muse2'",
+            "name": "Debug unit tests in executable 'highs_example_rust'",
             "cargo": {
-                "args": ["test", "--no-run", "--bin=muse2", "--package=muse2"],
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=highs_example_rust",
+                    "--package=highs_example_rust"
+                ],
                 "filter": {
-                    "name": "muse2",
+                    "name": "highs_example_rust",
                     "kind": "bin"
                 }
             },

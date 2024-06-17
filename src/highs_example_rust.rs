@@ -1,4 +1,4 @@
-//! The main crate for muse2. This contains all of MUSE's functionality.
+//! The main crate for highs_example_rust. This contains all of MUSE's functionality.
 pub mod constraint;
 mod settings;
 mod solver;
