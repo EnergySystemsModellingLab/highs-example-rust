@@ -1,6 +1,6 @@
 //! Data structures representing settings files and a function for reading them.
-use super::constraint::Constraint;
-use super::variable_definition::VariableDefinition;
+use crate::constraint::Constraint;
+use crate::variable_definition::VariableDefinition;
 use std::path::Path;
 
 use serde::Deserialize;

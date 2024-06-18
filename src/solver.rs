@@ -1,6 +1,6 @@
 //! Provides data structures and functions for performing optimisation.
-use super::constraint::Constraint;
-use super::variable_definition::VariableDefinition;
+use crate::constraint::Constraint;
+use crate::variable_definition::VariableDefinition;
 pub use highs::Sense;
 use highs::{HighsModelStatus, RowProblem};
 

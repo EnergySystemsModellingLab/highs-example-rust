@@ -1,5 +1,5 @@
 //! Provides functionality for optimisation constraints.
-use super::variable_definition::VariableDefinition;
+use crate::variable_definition::VariableDefinition;
 use polars::prelude::*;
 use std::path::Path;
 

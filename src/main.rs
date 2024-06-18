@@ -1,6 +1,13 @@
 //! Provides the main entry point to the highs_example_rust program.
 
-mod highs_example_rust;
+mod constraint;
+mod optimisation;
+mod settings;
+mod solver;
+mod variable_definition;
+
+#[cfg(test)]
+mod test_common;
 
 use std::env;
 use std::path::Path;
@@ -12,5 +19,5 @@ fn main() {
         panic!("Must provide path to model configuration TOML file.");
     }
 
-    highs_example_rust::run(Path::new(&args[1]))
+    optimisation::run(Path::new(&args[1]))
 }

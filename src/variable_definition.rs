@@ -1,5 +1,4 @@
 //! Provides variable definition data structures for optimisation.
-use csv;
 use serde::Deserialize;
 use std::path::Path;
 
