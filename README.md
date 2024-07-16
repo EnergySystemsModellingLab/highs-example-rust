@@ -36,7 +36,7 @@ cargo build
 To run MUSE with the example input files, you can run:
 
 ```sh
-cargo run examples/placeholder/settings.toml
+cargo run example/settings.toml
 ```
 
 Tests can be run with:
