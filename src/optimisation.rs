@@ -1,4 +1,3 @@
-//! The main crate for highs_example_rust. This contains all of MUSE's functionality.
 use crate::settings::read_settings;
 use crate::solver::{solve_highs, Sense};
 use std::path::Path;
