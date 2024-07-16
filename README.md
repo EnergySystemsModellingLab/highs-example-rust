@@ -33,7 +33,7 @@ To build the project, run:
 cargo build
 ```
 
-To run MUSE with the example input files, you can run:
+To run the code with the example input files, you can run:
 
 ```sh
 cargo run example/settings.toml
