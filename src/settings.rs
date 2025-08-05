@@ -26,9 +26,9 @@ struct InputFiles {
 /// Read a settings file from the given path.
 fn read_settings_file(path: &Path) -> Settings {
     let config_str = fs::read_to_string(path)
-        .unwrap_or_else(|err| panic!("Failed to read file {:?}: {:?}", path, err));
+        .unwrap_or_else(|err| panic!("Failed to read file {path:?}: {err:?}"));
     toml::from_str(&config_str)
-        .unwrap_or_else(|err| panic!("Could not parse settings file: {:?}", err))
+        .unwrap_or_else(|err| panic!("Could not parse settings file: {err:?}"))
 }
 
 /// Read settings from disk.
