@@ -13,6 +13,6 @@ pub fn run(settings_file_path: &Path) {
 
     // Calculate solution
     let solution = solve_highs(&definitions, &constraints, Sense::Maximise)
-        .unwrap_or_else(|err| panic!("Failed to calculate a solution: {:?}", err));
-    println!("Calculated solution: {:?}", solution);
+        .unwrap_or_else(|err| panic!("Failed to calculate a solution: {err:?}"));
+    println!("Calculated solution: {solution:?}");
 }
